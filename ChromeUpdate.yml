@@ -6,5 +6,5 @@
   
   tasks:
     - name: Chrome update
-      yum: name=google-chrome-stable state=latest
+      yum: name=google-chrome-stable state=present
     
