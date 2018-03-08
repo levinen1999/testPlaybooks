@@ -1,4 +1,5 @@
-- name: Hello World Sample
+---
+- name: Firefox update
   hosts: all
   tasks:
     - name: Hello Message
