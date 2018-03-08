@@ -1,0 +1,8 @@
+---
+- name: ensure that Chrome is updated
+  yum:
+    name: google-chrome-stable
+    state: latest
+    
+    
+    
