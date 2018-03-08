@@ -1,6 +1,9 @@
 ---
 - name: browserupdate
   hosts: all
+  become: true
+  become_method: sudo
+  
   tasks:
     - name: Chrome update
       yum: name=google-chrome-stable state=latest
