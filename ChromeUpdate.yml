@@ -1,8 +1,7 @@
 ---
-- name: ensure that Chrome is updated
-  yum:
-    name: google-chrome-stable
-    state: latest
-    
-    
+- name: browserupdate
+  hosts: all
+  tasks:
+    - name: Chrome update
+      yum: name=google-chrome-stable state=latest
     
