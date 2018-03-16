@@ -2,5 +2,5 @@
 - name: Firefox update
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Firefox update
       yum: name=firefox state=latest
