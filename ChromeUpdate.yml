@@ -1,10 +1,8 @@
 ---
 - name: browserupdate
   hosts: all
-  become: yes
-  become_method: su
   
   tasks:
     - name: Chrome update
-      yum: name=google-chrome-stable state=present
+      yum: name=google-chrome-stable state=latest
     
