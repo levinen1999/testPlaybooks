@@ -7,7 +7,7 @@
     - name: Chrome update
       yum: name=google-chrome-stable state=installed
       become: true
-      become_method: sudo
+      become_method: sudo -i
     
     - name: Firefox update
       yum: name=firefox.x86_64 state=latest
