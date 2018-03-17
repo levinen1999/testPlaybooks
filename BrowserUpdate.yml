@@ -1,10 +1,13 @@
 ---
 - name: browserupdate
-  hosts: host1
+  hosts: all
+  become: yes
+  become_method: sudo
+  
   
   tasks:
     - name: Chrome update
       yum: name=google-chrome-stable state=latest
     
     - name: Firefox update
-      yum: name=firefox.x86_64 state=updated
+      yum: name=firefox.x86_64 state=latest
