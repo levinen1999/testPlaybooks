@@ -1,6 +1,6 @@
 ---
 - name: browserupdate
-  hosts: all
+  hosts: TestPC
   
   tasks:
     - name: Chrome update
