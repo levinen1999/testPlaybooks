@@ -1,5 +1,5 @@
 ---
-- name: Sytem Update
+- name: System Update
   hosts: all
   sudo: yes
   tasks:
