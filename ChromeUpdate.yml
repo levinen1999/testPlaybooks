@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   become_method: sudo
-  
+  become_pass: Doamagictrick1.
   tasks:
     - name: Chrome update
       yum: name=google-chrome-stable state=latest
