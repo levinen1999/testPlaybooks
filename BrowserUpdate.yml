@@ -9,4 +9,4 @@
       yum: name=google-chrome-stable state=installed
     
     - name: Firefox update
-      yum: name=firefox.x86_64 state=installed
+      yum: name=firefox.x86_64 state=latest
