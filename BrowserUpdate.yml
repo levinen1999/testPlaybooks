@@ -5,8 +5,8 @@
   
   
   tasks:
-    - name: Chrome update
-      yum: name=google-chrome-stable state=installed
+    - name: Ensure that Chrome is updated
+      yum: name=google-chrome-stable state=latest
      
     
     - name: Firefox update
