@@ -1,6 +1,0 @@
----
-- name: Firefox update
-  hosts: all
-  tasks:
-    - name: Firefox update
-      yum: name=firefox state=latest
