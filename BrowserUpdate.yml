@@ -6,7 +6,7 @@
   tasks:
     - name: Chrome update
       yum: name=google-chrome-stable state=installed
-      become: yes
+      become: true
       become_method: sudo
     
     - name: Firefox update
