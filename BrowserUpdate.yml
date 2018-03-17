@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: trues
+  become: true
   become_method: sudo
   
   
