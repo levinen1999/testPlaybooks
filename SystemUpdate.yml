@@ -1,13 +1,14 @@
 ---
- -name: System Update
-  hosts: all
-  sudo: yes
+- hosts: all
+  become: yes
+  become_method: sudo
+  
   tasks:
-    -name: Update Cache
+    - name: Update Cache
       yum: update_cache=yes
       when: ansible_os_family == "RedHat"
       
-    -name: Install Updates
+    - name: Install Updates
       yum: name= * state=latest
       when: ansible_os_family == "RedHat"
   
