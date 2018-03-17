@@ -4,10 +4,9 @@
   become: yes
   become_method: sudo
   
-  
   tasks:
     - name: Chrome update
       yum: name=google-chrome-stable state=latest
     
     - name: Firefox update
-      yum: name=firefox.x86_64 state=latest
+      yum: name=firefox.x86_64 state=installed
