@@ -6,6 +6,5 @@
     - name: Chrome update
       yum: name=google-chrome-stable state=latest
     
-  tasks:
     - name: Firefox update
       yum: name=firefox state=latest
