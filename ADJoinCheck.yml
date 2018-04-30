@@ -5,7 +5,7 @@
   
   tasks:
    - name: Check if machine is bound
-      shell: /bin/bash -c "realm list | grep sssd"
+      shell: /bin/bash -c "realm list | grep gemini"
       register: realmd_bound
       changed_when: false
       ignore_errors: true
