@@ -2,3 +2,10 @@
 - hosts: all
   become: true
   become_method: sudo
+  
+  tasks:
+   - name: Check if machine is bound
+      shell: /bin/bash -c "realm list | grep sssd"
+      register: realmd_bound
+      changed_when: false
+      ignore_errors: true
