@@ -4,6 +4,11 @@
   become_method: sudo
   
   tasks:
+   - name: install realmd
+     yum:
+       name: realmd
+       state: present
+       
    - name: Check if machine is bound
      shell: /bin/bash -c "realm list | grep gemini"
      register: realmd_bound
