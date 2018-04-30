@@ -5,7 +5,7 @@
   
   tasks:
    - name: Check if machine is bound
-      cmd: /usr/bin/adcheck.sh
-      register: realmd_bound
-      changed_when: false
-      ignore_errors: true
+     command: /usr/bin/adcheck.sh
+     register: realmd_bound
+     changed_when: false
+     ignore_errors: true
