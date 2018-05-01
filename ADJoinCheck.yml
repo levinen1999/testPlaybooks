@@ -11,10 +11,10 @@
        
    - name: Check if machine is bound
      shell: /bin/bash -c "net ads info"
-     register: realmd_bound
+     register: ad_join
      changed_when: false
      ignore_errors: true
      
    - name: Echo active directory
      command: echo "active directory not joined"
-     when: realmd_bound is failed
+     when: ad_join is failed
