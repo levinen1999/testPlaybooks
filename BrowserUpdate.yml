@@ -10,4 +10,4 @@
      
     
     - name: Firefox update
-      yum: name=firefox state=installed
+      yum: name=firefox state=latest
