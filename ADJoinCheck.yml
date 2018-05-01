@@ -10,7 +10,7 @@
        state: present
        
    - name: Check if machine is bound
-     shell: /bin/bash -c "realm list | grep sssd"
+     command: /bin/adcheck.sh
      register: realmd_bound
      changed_when: false
      ignore_errors: true
