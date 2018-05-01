@@ -5,7 +5,7 @@
   
   tasks:
    - name: Check if machine is bound
-     shell: /bin/bash -c "net ads info"
+     shell: /bin/bash -c "net ads info | grep gemini"
      register: ad_join
      changed_when: false
      ignore_errors: true
