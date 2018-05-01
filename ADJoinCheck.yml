@@ -10,7 +10,7 @@
        state: present
        
    - name: Check if machine is bound
-     command: /bin/adcheck.sh
+     shell: /bin/bash -c "net ads info"
      register: realmd_bound
      changed_when: false
      ignore_errors: true
