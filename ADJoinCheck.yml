@@ -10,7 +10,7 @@
        state: present
        
    - name: Check if machine is bound
-     shell: "realm list | grep gemini"
+     shell: -c "realm list | grep gemini"
      register: realmd_bound
      changed_when: false
      ignore_errors: true
