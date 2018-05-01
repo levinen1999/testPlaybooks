@@ -10,4 +10,4 @@
      
     
     - name: Firefox update
-      yum: name=firefox.x86_64 state=latest
+      yum: name=firefox.x86_64 state=present
