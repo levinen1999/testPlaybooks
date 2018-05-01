@@ -14,3 +14,7 @@
      register: realmd_bound
      changed_when: false
      ignore_errors: true
+     
+   - name: Echo active directory not joined
+     command: echo "active directory not joined"
+     when: realmd_bound|failed
