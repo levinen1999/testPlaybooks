@@ -15,6 +15,6 @@
      changed_when: false
      ignore_errors: true
      
-   - name: Echo active directory not joined
+   - name: Echo active directory
      command: echo "active directory not joined"
      when: realmd_bound is failed
