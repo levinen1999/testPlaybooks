@@ -17,4 +17,4 @@
      
    - name: Echo active directory not joined
      command: echo "active directory not joined"
-     when: realmd_bound|failed
+     when: realmd_bound is failed
