@@ -4,15 +4,15 @@
   become_method: sudo
   
   tasks:
-   - name: install realm
-     yum: realmd
-     state: installed
+    - name: install realm
+      yum: realmd
+      state: installed
      
-   - name: Checking to see if system is already joined to AD
-     command: /bin/bash -c "/usr/sbin/realm list | grep gemini"
-     register: realm_list_results
-     tags: ad
+    - name: Checking to see if system is already joined to AD
+      command: /bin/bash -c "/usr/sbin/realm list | grep gemini"
+      register: realm_list_results
+      tags: ad
 
-   - name: Debug realm_list_results
-     debug:
-           msg: "{{ realm_list_results.stdout }}"
+    - name: Debug realm_list_results
+      debug:
+            msg: "{{ realm_list_results.stdout }}"
