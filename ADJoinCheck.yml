@@ -5,8 +5,7 @@
   
   tasks:
     - name: install realm
-      yum: realmd
-      state: installed
+      yum: name=realmd state=installed
      
     - name: Checking to see if system is already joined to AD
       command: /bin/bash -c "/usr/sbin/realm list | grep gemini"
