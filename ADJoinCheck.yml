@@ -11,4 +11,4 @@
 
    - name: Debug realm_list_results
      debug:
-     msg: {{ adJoin_results.stdout }}
+     msg: "{{ adJoin_results.stdout }}"
