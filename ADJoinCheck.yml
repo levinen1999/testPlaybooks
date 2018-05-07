@@ -13,6 +13,6 @@
      register: realm_list_results
      tags: ad
 
-  - name: Debug realm_list_results
-    debug:
-          msg: "{{ realm_list_results.stdout }}"
+   - name: Debug realm_list_results
+     debug:
+           msg: "{{ realm_list_results.stdout }}"
