@@ -14,5 +14,5 @@
      tags: ad
 
   - name: Debug realm_list_results
-    - debug:
-        msg: "{{ realm_list_results.stdout }}"
+    debug:
+          msg: "{{ realm_list_results.stdout }}"
