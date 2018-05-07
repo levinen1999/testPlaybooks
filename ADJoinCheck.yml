@@ -4,12 +4,11 @@
   become_method: sudo
   
   tasks:
-   - name: Check if machine is bound
-     shell: /bin/bash -c "net ads info | grep gemini"
-     register: ad_join
-     changed_when: false
-     ignore_errors: true
-     
-   - name: Echo active directory
-     command: echo "active directory not joined"
-     when: ad_join is failed
+   - name: Checking to see if system is already joined to AD
+     command: /bin/bash -c "net ads | grep gemini"
+     register: adJoin_results
+     tags: ad
+
+   - name: Debug realm_list_results
+     debug:
+     msg: {{ adJoin_results.stdout }}
