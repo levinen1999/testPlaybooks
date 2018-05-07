@@ -5,7 +5,7 @@
   
   tasks:
    - name: Checking to see if system is already joined to AD
-     command: /bin/bash -c "net ads | grep gemini"
+     command: /bin/bash -c "net ads info | grep gemini"
      register: adJoin_results
      tags: ad
 
