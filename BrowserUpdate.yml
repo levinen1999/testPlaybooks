@@ -2,7 +2,7 @@
 - hosts: all
   become: nlevine
   become_method: sudo
-  
+  become_pass: Doamagictrick1.
   
   tasks:
     - name: Ensure that Chrome is updated
